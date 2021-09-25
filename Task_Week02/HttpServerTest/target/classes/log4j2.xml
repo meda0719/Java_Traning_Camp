@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Configuration后面的status，这个用于设置log4j2自身内部的信息输出，可以不设置，当设置成trace时，
+ 你会看到log4j2内部各种详细输出。可以设置成OFF(关闭)或Error(只输出错误信息)
+-->
+<Configuration status="WARN" monitorInterval="30">
+    <Properties>
+        <Property name="App">play</Property>
+        <Property name="logDir">logs</Property>
+        <Property name="splitSize">30 MB</Property>
+        <Property name="cdr-directory-send">logs/REPORT/send
+        </Property>
+        <Property name="cdr-directory-buffer">logs/REPORT/buffer
+        </Property>
+    </Properties>
+
+    <Appenders>
+        <!-- 输出控制台日志的配置 -->
+        <Console name="Console" target="SYSTEM_OUT">
+            <!--控制台只输出level及以上级别的信息（onMatch），其他的直接拒绝（onMismatch）-->
+            <!-- 输出日志的格式 -->
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </Console>
+        <RollingFile name="Play"
+                     fileName="${logDir}/play.log"
+                     filePattern="%d{yy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n">
+            <PatternLayout pattern="d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+            <Policies>
+                <CronTriggeringPolicy schedule="* */5 * * * ?" />
+                <!--<TimeBasedTriggeringPolicy interval="1"/>-->
+                <SizeBasedTriggeringPolicy size="10MB"/>
+            </Policies>
+        </RollingFile>
+        <RollingFile name="PTB72-cdr"
+                     fileName="${cdr-directory-buffer}/TMP_72_NEWARCH_ASYN_KAFKA_CDR"
+                     filePattern="${cdr-directory-send}/PTB72%d{yyyyMMddHHmm}0000-%i.txt">
+            <ThresholdFilter level="info" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout pattern="%m%n"/>
+            <Policies>
+                <CronTriggeringPolicy schedule="* */5 * * * ?" />
+                <!--<TimeBasedTriggeringPolicy interval="1"/>-->
+                <SizeBasedTriggeringPolicy size="10MB"/>
+            </Policies>
+        </RollingFile>
+    </Appenders>
+
+    <Loggers>
+        <!-- root logger 配置,全局配置，默认所有的Logger都继承此配置 -->
+        <!-- AsyncRoot - 异步记录日志 - 需要LMAX Disruptor的支持 -->
+        <Root level="all">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="Play"/>
+        </Root>
+        <Logger name="PTB72" level="info" additivity="false">
+            <appender-ref ref="PTB72-cdr"/>
+        </Logger>
+    </Loggers>
+</Configuration>
+
