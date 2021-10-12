@@ -1,0 +1,151 @@
+2021-10-04 12:32:24 [INFO ](HttpOutboundHandler           ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http://localhost:8802/
+2021-10-04 12:32:24 [DEBUG](MainClientExec                ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [exchange: 2] start execution
+2021-10-04 12:32:24 [DEBUG](RequestAddCookies             ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] CookieSpec selected: default
+2021-10-04 12:32:24 [DEBUG](RequestAuthCache              ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Auth cache not set in the context
+2021-10-04 12:32:24 [DEBUG](InternalHttpAsyncClient       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [exchange: 2] Request connection for {}->http://localhost:8802
+2021-10-04 12:32:24 [DEBUG](PoolingNHttpClientConnectionManager) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Connection request: [route: {}->http://localhost:8802][total kept alive: 1; route allocated: 1 of 8; total allocated: 1 of 40]
+2021-10-04 12:32:24 [DEBUG](PoolingNHttpClientConnectionManager) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Connection leased: [id: http-outgoing-1][route: {}->http://localhost:8802][total kept alive: 0; route allocated: 1 of 8; total allocated: 0 of 40]
+2021-10-04 12:32:24 [DEBUG](InternalHttpAsyncClient       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [exchange: 2] Connection allocated: CPoolProxy{http-outgoing-1 [ACTIVE]}
+2021-10-04 12:32:24 [DEBUG](ManagedNHttpClientConnectionImpl) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-1 127.0.0.1:52141<->127.0.0.1:8802[ACTIVE][r:]: Set attribute http.nio.exchange-handler
+2021-10-04 12:32:24 [DEBUG](ManagedNHttpClientConnectionImpl) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-1 127.0.0.1:52141<->127.0.0.1:8802[ACTIVE][rw:]: Event set [w]
+2021-10-04 12:32:24 [DEBUG](ManagedNHttpClientConnectionImpl) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-1 127.0.0.1:52141<->127.0.0.1:8802[ACTIVE][rw:]: Set timeout 1000
+2021-10-04 12:32:24 [DEBUG](InternalIODispatch            ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-1 [ACTIVE]: Connected
+2021-10-04 12:32:24 [DEBUG](ManagedNHttpClientConnectionImpl) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-1 127.0.0.1:52141<->127.0.0.1:8802[ACTIVE][rw:]: Set attribute http.nio.http-exchange-state
+2021-10-04 12:32:24 [DEBUG](InternalHttpAsyncClient       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [exchange: 2] Start connection routing
+2021-10-04 12:32:24 [DEBUG](InternalHttpAsyncClient       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [exchange: 2] route completed
+2021-10-04 12:32:24 [DEBUG](MainClientExec                ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [exchange: 2] Connection route established
+2021-10-04 12:32:24 [DEBUG](MainClientExec                ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [exchange: 2] Attempt 1 to execute request
+2021-10-04 12:32:24 [DEBUG](MainClientExec                ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [exchange: 2] Target auth state: UNCHALLENGED
+2021-10-04 12:32:24 [DEBUG](MainClientExec                ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [exchange: 2] Proxy auth state: UNCHALLENGED
+2021-10-04 12:32:24 [DEBUG](headers                       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-1 >> GET / HTTP/1.1
+2021-10-04 12:32:24 [DEBUG](headers                       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-1 >> Connection: Keep-Alive
+2021-10-04 12:32:24 [DEBUG](headers                       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-1 >> mao: soul
+2021-10-04 12:32:24 [DEBUG](headers                       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-1 >> Host: localhost:8802
+2021-10-04 12:32:24 [DEBUG](headers                       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-1 >> User-Agent: Apache-HttpAsyncClient/4.1.4 (Java/11.0.12)
+2021-10-04 12:32:24 [DEBUG](ManagedNHttpClientConnectionImpl) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-1 127.0.0.1:52141<->127.0.0.1:8802[ACTIVE][rw:]: Event set [w]
+2021-10-04 12:32:24 [DEBUG](MainClientExec                ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [exchange: 2] Request completed
+2021-10-04 12:32:24 [DEBUG](ManagedNHttpClientConnectionImpl) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-1 127.0.0.1:52141<->127.0.0.1:8802[ACTIVE][rw:rw]: 83 bytes read
+2021-10-04 12:32:24 [DEBUG](wire                          ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-1 << "HTTP/1.1 200 OK[\n]"
+2021-10-04 12:32:24 [DEBUG](wire                          ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-1 << "Content-Type:text/html;charset=utf-8[\n]"
+2021-10-04 12:32:24 [DEBUG](wire                          ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-1 << "Content-Length:11[\n]"
+2021-10-04 12:32:24 [DEBUG](wire                          ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-1 << "[\n]"
+2021-10-04 12:32:24 [DEBUG](wire                          ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-1 << "hello, nio2"
+2021-10-04 12:32:24 [DEBUG](headers                       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-1 << HTTP/1.1 200 OK
+2021-10-04 12:32:24 [DEBUG](headers                       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-1 << Content-Type:text/html;charset=utf-8
+2021-10-04 12:32:24 [DEBUG](headers                       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-1 << Content-Length:11
+2021-10-04 12:32:24 [DEBUG](InternalIODispatch            ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-1 [ACTIVE(11)] Response received
+2021-10-04 12:32:24 [DEBUG](MainClientExec                ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [exchange: 2] Response received HTTP/1.1 200 OK
+2021-10-04 12:32:24 [DEBUG](InternalIODispatch            ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-1 [ACTIVE(11)] Input ready
+2021-10-04 12:32:24 [DEBUG](MainClientExec                ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [exchange: 2] Consume content
+2021-10-04 12:32:24 [DEBUG](InternalHttpAsyncClient       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [exchange: 2] Connection can be kept alive for 6000 MILLISECONDS
+2021-10-04 12:32:24 [DEBUG](MainClientExec                ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [exchange: 2] Response processed
+2021-10-04 12:32:24 [DEBUG](InternalHttpAsyncClient       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [exchange: 2] releasing connection
+2021-10-04 12:32:24 [DEBUG](ManagedNHttpClientConnectionImpl) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-1 127.0.0.1:52141<->127.0.0.1:8802[ACTIVE][rw:rw]: Remove attribute http.nio.exchange-handler
+2021-10-04 12:32:24 [DEBUG](PoolingNHttpClientConnectionManager) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Releasing connection: [id: http-outgoing-1][route: {}->http://localhost:8802][total kept alive: 0; route allocated: 1 of 8; total allocated: 1 of 40]
+2021-10-04 12:32:24 [DEBUG](PoolingNHttpClientConnectionManager) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Connection [id: http-outgoing-1][route: {}->http://localhost:8802] can be kept alive for 6.0 seconds
+2021-10-04 12:32:24 [DEBUG](ManagedNHttpClientConnectionImpl) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-1 127.0.0.1:52141<->127.0.0.1:8802[ACTIVE][rw:rw]: Set timeout 0
+2021-10-04 12:32:24 [DEBUG](PoolingNHttpClientConnectionManager) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Connection released: [id: http-outgoing-1][route: {}->http://localhost:8802][total kept alive: 1; route allocated: 1 of 8; total allocated: 1 of 40]
+2021-10-04 12:32:24 [INFO ](HttpOutboundHandler           ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] DefaultFullHttpResponse(decodeResult: success, version: HTTP/1.1, content: UnpooledHeapByteBuf(ridx: 0, widx: 11, cap: 11/11))
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 11
+kk: java-1-nio
+2021-10-04 12:32:24 [DEBUG](InternalIODispatch            ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-1 [ACTIVE] [content length: 11; pos: 11; completed: true]
+2021-10-04 12:32:24 [DEBUG](ManagedNHttpClientConnectionImpl) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-1 127.0.0.1:52141<->127.0.0.1:8802[ACTIVE][rw:rw]: 132 bytes written
+2021-10-04 12:32:24 [DEBUG](wire                          ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-1 >> "GET / HTTP/1.1[\r][\n]"
+2021-10-04 12:32:24 [DEBUG](wire                          ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-1 >> "Connection: Keep-Alive[\r][\n]"
+2021-10-04 12:32:24 [DEBUG](wire                          ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-1 >> "mao: soul[\r][\n]"
+2021-10-04 12:32:24 [DEBUG](wire                          ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-1 >> "Host: localhost:8802[\r][\n]"
+2021-10-04 12:32:24 [DEBUG](wire                          ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-1 >> "User-Agent: Apache-HttpAsyncClient/4.1.4 (Java/11.0.12)[\r][\n]"
+2021-10-04 12:32:24 [DEBUG](wire                          ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-1 >> "[\r][\n]"
+2021-10-04 12:32:24 [DEBUG](InternalIODispatch            ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-1 [ACTIVE] Exception
+java.io.IOException: Connection reset by peer
+	at java.base/sun.nio.ch.FileDispatcherImpl.read0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:39)
+	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:276)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:245)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:223)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:358)
+	at org.apache.http.impl.nio.conn.LoggingIOSession$LoggingByteChannel.read(LoggingIOSession.java:204)
+	at org.apache.http.impl.nio.reactor.SessionInputBufferImpl.fill(SessionInputBufferImpl.java:204)
+	at org.apache.http.impl.nio.codecs.AbstractMessageParser.fillBuffer(AbstractMessageParser.java:136)
+	at org.apache.http.impl.nio.DefaultNHttpClientConnection.consumeInput(DefaultNHttpClientConnection.java:241)
+	at org.apache.http.impl.nio.client.InternalIODispatch.onInputReady(InternalIODispatch.java:81)
+	at org.apache.http.impl.nio.client.InternalIODispatch.onInputReady(InternalIODispatch.java:39)
+	at org.apache.http.impl.nio.reactor.AbstractIODispatch.inputReady(AbstractIODispatch.java:114)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.readable(BaseIOReactor.java:162)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.processEvent(AbstractIOReactor.java:337)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.processEvents(AbstractIOReactor.java:315)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.execute(AbstractIOReactor.java:276)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.execute(BaseIOReactor.java:104)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:588)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-10-04 12:32:24 [DEBUG](ManagedNHttpClientConnectionImpl) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-1 127.0.0.1:52141<->127.0.0.1:8802[ACTIVE][rw:rw]: Shutdown
+2021-10-04 12:32:24 [DEBUG](InternalIODispatch            ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-1 [CLOSED]: Disconnected
+2021-10-04 12:32:27 [INFO ](HttpOutboundHandler           ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http://localhost:8801/s?name=Meda/
+2021-10-04 12:32:27 [DEBUG](MainClientExec                ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [exchange: 3] start execution
+2021-10-04 12:32:27 [DEBUG](RequestAddCookies             ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] CookieSpec selected: default
+2021-10-04 12:32:27 [DEBUG](RequestAuthCache              ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Auth cache not set in the context
+2021-10-04 12:32:27 [DEBUG](InternalHttpAsyncClient       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [exchange: 3] Request connection for {}->http://localhost:8801
+2021-10-04 12:32:27 [DEBUG](PoolingNHttpClientConnectionManager) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Connection request: [route: {}->http://localhost:8801][total kept alive: 1; route allocated: 0 of 8; total allocated: 1 of 40]
+2021-10-04 12:32:27 [DEBUG](PoolingNHttpClientConnectionManager) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Connection leased: [id: http-outgoing-2][route: {}->http://localhost:8801][total kept alive: 1; route allocated: 1 of 8; total allocated: 1 of 40]
+2021-10-04 12:32:27 [DEBUG](InternalHttpAsyncClient       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [exchange: 3] Connection allocated: CPoolProxy{http-outgoing-2 [ACTIVE]}
+2021-10-04 12:32:27 [DEBUG](ManagedNHttpClientConnectionImpl) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-2 127.0.0.1:52142<->127.0.0.1:8801[ACTIVE][r:]: Set attribute http.nio.exchange-handler
+2021-10-04 12:32:27 [DEBUG](ManagedNHttpClientConnectionImpl) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-2 127.0.0.1:52142<->127.0.0.1:8801[ACTIVE][rw:]: Event set [w]
+2021-10-04 12:32:27 [DEBUG](ManagedNHttpClientConnectionImpl) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-2 127.0.0.1:52142<->127.0.0.1:8801[ACTIVE][rw:]: Set timeout 1000
+2021-10-04 12:32:27 [DEBUG](InternalIODispatch            ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-2 [ACTIVE]: Connected
+2021-10-04 12:32:27 [DEBUG](ManagedNHttpClientConnectionImpl) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-2 127.0.0.1:52142<->127.0.0.1:8801[ACTIVE][rw:]: Set attribute http.nio.http-exchange-state
+2021-10-04 12:32:27 [DEBUG](InternalHttpAsyncClient       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [exchange: 3] Start connection routing
+2021-10-04 12:32:27 [DEBUG](InternalHttpAsyncClient       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [exchange: 3] route completed
+2021-10-04 12:32:27 [DEBUG](MainClientExec                ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [exchange: 3] Connection route established
+2021-10-04 12:32:27 [DEBUG](MainClientExec                ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [exchange: 3] Attempt 1 to execute request
+2021-10-04 12:32:27 [DEBUG](MainClientExec                ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [exchange: 3] Target auth state: UNCHALLENGED
+2021-10-04 12:32:27 [DEBUG](MainClientExec                ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [exchange: 3] Proxy auth state: UNCHALLENGED
+2021-10-04 12:32:27 [DEBUG](headers                       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-2 >> GET /s?name=Meda/ HTTP/1.1
+2021-10-04 12:32:27 [DEBUG](headers                       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-2 >> Connection: Keep-Alive
+2021-10-04 12:32:27 [DEBUG](headers                       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-2 >> mao: soul
+2021-10-04 12:32:27 [DEBUG](headers                       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-2 >> Host: localhost:8801
+2021-10-04 12:32:27 [DEBUG](headers                       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-2 >> User-Agent: Apache-HttpAsyncClient/4.1.4 (Java/11.0.12)
+2021-10-04 12:32:27 [DEBUG](ManagedNHttpClientConnectionImpl) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-2 127.0.0.1:52142<->127.0.0.1:8801[ACTIVE][rw:]: Event set [w]
+2021-10-04 12:32:27 [DEBUG](MainClientExec                ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [exchange: 3] Request completed
+2021-10-04 12:32:27 [DEBUG](ManagedNHttpClientConnectionImpl) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-2 127.0.0.1:52142<->127.0.0.1:8801[ACTIVE][rw:w]: 144 bytes written
+2021-10-04 12:32:27 [DEBUG](wire                          ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-2 >> "GET /s?name=Meda/ HTTP/1.1[\r][\n]"
+2021-10-04 12:32:27 [DEBUG](wire                          ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-2 >> "Connection: Keep-Alive[\r][\n]"
+2021-10-04 12:32:27 [DEBUG](wire                          ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-2 >> "mao: soul[\r][\n]"
+2021-10-04 12:32:27 [DEBUG](wire                          ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-2 >> "Host: localhost:8801[\r][\n]"
+2021-10-04 12:32:27 [DEBUG](wire                          ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-2 >> "User-Agent: Apache-HttpAsyncClient/4.1.4 (Java/11.0.12)[\r][\n]"
+2021-10-04 12:32:27 [DEBUG](wire                          ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-2 >> "[\r][\n]"
+2021-10-04 12:32:27 [DEBUG](ManagedNHttpClientConnectionImpl) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-2 127.0.0.1:52142<->127.0.0.1:8801[ACTIVE][rw:rw]: 83 bytes read
+2021-10-04 12:32:27 [DEBUG](wire                          ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-2 << "HTTP/1.1 200 OK[\n]"
+2021-10-04 12:32:27 [DEBUG](wire                          ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-2 << "Content-Type:text/html;charset=utf-8[\n]"
+2021-10-04 12:32:27 [DEBUG](wire                          ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-2 << "Content-Length:11[\n]"
+2021-10-04 12:32:27 [DEBUG](wire                          ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-2 << "[\n]"
+2021-10-04 12:32:27 [DEBUG](wire                          ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-2 << "hello, Meda"
+2021-10-04 12:32:27 [DEBUG](headers                       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-2 << HTTP/1.1 200 OK
+2021-10-04 12:32:27 [DEBUG](headers                       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-2 << Content-Type:text/html;charset=utf-8
+2021-10-04 12:32:27 [DEBUG](headers                       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-2 << Content-Length:11
+2021-10-04 12:32:27 [DEBUG](InternalIODispatch            ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-2 [ACTIVE(11)] Response received
+2021-10-04 12:32:27 [DEBUG](MainClientExec                ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [exchange: 3] Response received HTTP/1.1 200 OK
+2021-10-04 12:32:27 [DEBUG](InternalIODispatch            ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-2 [ACTIVE(11)] Input ready
+2021-10-04 12:32:27 [DEBUG](MainClientExec                ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [exchange: 3] Consume content
+2021-10-04 12:32:27 [DEBUG](InternalHttpAsyncClient       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [exchange: 3] Connection can be kept alive for 6000 MILLISECONDS
+2021-10-04 12:32:27 [DEBUG](MainClientExec                ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [exchange: 3] Response processed
+2021-10-04 12:32:27 [DEBUG](InternalHttpAsyncClient       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [exchange: 3] releasing connection
+2021-10-04 12:32:27 [DEBUG](ManagedNHttpClientConnectionImpl) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-2 127.0.0.1:52142<->127.0.0.1:8801[ACTIVE][rw:rw]: Remove attribute http.nio.exchange-handler
+2021-10-04 12:32:27 [DEBUG](PoolingNHttpClientConnectionManager) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Releasing connection: [id: http-outgoing-2][route: {}->http://localhost:8801][total kept alive: 1; route allocated: 1 of 8; total allocated: 2 of 40]
+2021-10-04 12:32:27 [DEBUG](PoolingNHttpClientConnectionManager) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Connection [id: http-outgoing-2][route: {}->http://localhost:8801] can be kept alive for 6.0 seconds
+2021-10-04 12:32:27 [DEBUG](ManagedNHttpClientConnectionImpl) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-2 127.0.0.1:52142<->127.0.0.1:8801[ACTIVE][rw:rw]: Set timeout 0
+2021-10-04 12:32:27 [DEBUG](PoolingNHttpClientConnectionManager) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Connection released: [id: http-outgoing-2][route: {}->http://localhost:8801][total kept alive: 2; route allocated: 1 of 8; total allocated: 2 of 40]
+2021-10-04 12:32:27 [INFO ](HttpOutboundHandler           ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] DefaultFullHttpResponse(decodeResult: success, version: HTTP/1.1, content: UnpooledHeapByteBuf(ridx: 0, widx: 11, cap: 11/11))
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 11
+kk: java-1-nio
+2021-10-04 12:32:27 [DEBUG](InternalIODispatch            ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-2 [ACTIVE] [content length: 11; pos: 11; completed: true]
+2021-10-04 12:32:27 [DEBUG](InternalIODispatch            ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-2 [ACTIVE] Request ready
+2021-10-04 12:32:27 [DEBUG](ManagedNHttpClientConnectionImpl) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-2 127.0.0.1:52142<->127.0.0.1:8801[ACTIVE][r:rw]: Event cleared [w]
+2021-10-04 12:32:27 [DEBUG](ManagedNHttpClientConnectionImpl) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-2 127.0.0.1:52142<->127.0.0.1:8801[ACTIVE][r:r]: -1 bytes read
+2021-10-04 12:32:27 [DEBUG](InternalIODispatch            ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-2 [ACTIVE] End of input
+2021-10-04 12:32:27 [DEBUG](ManagedNHttpClientConnectionImpl) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-2 127.0.0.1:52142<->127.0.0.1:8801[ACTIVE][r:r]: Set timeout 1000
+2021-10-04 12:32:27 [DEBUG](ManagedNHttpClientConnectionImpl) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-2 127.0.0.1:52142<->127.0.0.1:8801[ACTIVE][r:r]: Close
+2021-10-04 12:32:27 [DEBUG](InternalIODispatch            ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-2 [CLOSED]: Disconnected

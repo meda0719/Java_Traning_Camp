@@ -1,0 +1,20 @@
+2021-10-03 21:51:34 [DEBUG](LoggingHandler                ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [id: 0x12ddcd12, L:/0:0:0:0:0:0:0:0:8888] READ: [id: 0xedc8027a, L:/0:0:0:0:0:0:0:1:8888 - R:/0:0:0:0:0:0:0:1:49691]
+2021-10-03 21:51:34 [WARN ](ServerBootstrap               ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Unknown channel option 'io.netty.channel.unix.UnixChannelOption#SO_REUSEPORT' for channel '[id: 0xedc8027a, L:/0:0:0:0:0:0:0:1:8888 - R:/0:0:0:0:0:0:0:1:49691]'
+2021-10-03 21:51:34 [DEBUG](LoggingHandler                ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [id: 0x12ddcd12, L:/0:0:0:0:0:0:0:0:8888] READ COMPLETE
+2021-10-03 21:51:34 [DEBUG](MainClientExec                ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [exchange: 2] start execution
+2021-10-03 21:51:34 [DEBUG](RequestAddCookies             ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] CookieSpec selected: default
+2021-10-03 21:51:34 [DEBUG](RequestAuthCache              ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Auth cache not set in the context
+2021-10-03 21:51:34 [DEBUG](InternalHttpAsyncClient       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [exchange: 2] Request connection for {}->http://localhost:8801
+2021-10-03 21:51:34 [DEBUG](PoolingNHttpClientConnectionManager) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Connection request: [route: {}->http://localhost:8801][total kept alive: 0; route allocated: 0 of 8; total allocated: 0 of 40]
+2021-10-03 21:51:34 [DEBUG](PoolingNHttpClientConnectionManager) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Connection request failed
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:715)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:221)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:748)
+2021-10-03 21:51:34 [DEBUG](InternalHttpAsyncClient       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [exchange: 2] connection request failed
+2021-10-03 21:51:34 [DEBUG](InternalHttpAsyncClient       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [exchange: 2] Cancelled

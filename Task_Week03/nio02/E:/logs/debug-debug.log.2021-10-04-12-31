@@ -1,0 +1,190 @@
+2021-10-04 12:31:50 [DEBUG](InternalLoggerFactory         ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Using SLF4J as the default logging framework
+2021-10-04 12:31:50 [DEBUG](MultithreadEventLoopGroup     ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] -Dio.netty.eventLoopThreads: 16
+2021-10-04 12:31:50 [DEBUG](InternalThreadLocalMap        ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2021-10-04 12:31:50 [DEBUG](InternalThreadLocalMap        ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2021-10-04 12:31:50 [DEBUG](NioEventLoop                  ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] -Dio.netty.noKeySetOptimization: false
+2021-10-04 12:31:50 [DEBUG](NioEventLoop                  ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] -Dio.netty.selectorAutoRebuildThreshold: 512
+2021-10-04 12:31:50 [DEBUG](PlatformDependent             ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Platform: MacOS
+2021-10-04 12:31:50 [DEBUG](PlatformDependent0            ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] -Dio.netty.noUnsafe: false
+2021-10-04 12:31:50 [DEBUG](PlatformDependent0            ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Java version: 11
+2021-10-04 12:31:50 [DEBUG](PlatformDependent0            ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] sun.misc.Unsafe.theUnsafe: available
+2021-10-04 12:31:50 [DEBUG](PlatformDependent0            ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] sun.misc.Unsafe.copyMemory: available
+2021-10-04 12:31:50 [DEBUG](PlatformDependent0            ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] java.nio.Buffer.address: available
+2021-10-04 12:31:50 [DEBUG](PlatformDependent0            ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] direct buffer constructor: unavailable
+java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
+	at io.netty.util.internal.ReflectionUtil.trySetAccessible(ReflectionUtil.java:31)
+	at io.netty.util.internal.PlatformDependent0$4.run(PlatformDependent0.java:225)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:219)
+	at io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:273)
+	at io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:92)
+	at io.netty.channel.nio.NioEventLoop.newTaskQueue0(NioEventLoop.java:279)
+	at io.netty.channel.nio.NioEventLoop.newTaskQueue(NioEventLoop.java:150)
+	at io.netty.channel.nio.NioEventLoop.<init>(NioEventLoop.java:138)
+	at io.netty.channel.nio.NioEventLoopGroup.newChild(NioEventLoopGroup.java:146)
+	at io.netty.channel.nio.NioEventLoopGroup.newChild(NioEventLoopGroup.java:37)
+	at io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:84)
+	at io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:58)
+	at io.netty.channel.MultithreadEventLoopGroup.<init>(MultithreadEventLoopGroup.java:52)
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:96)
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:91)
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:72)
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:52)
+	at io.github.kimmking.gateway.inbound.HttpInboundServer.run(HttpInboundServer.java:33)
+	at io.github.kimmking.gateway.NettyServerApplication.main(NettyServerApplication.java:31)
+2021-10-04 12:31:50 [DEBUG](PlatformDependent0            ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] java.nio.Bits.unaligned: available, true
+2021-10-04 12:31:51 [DEBUG](PlatformDependent0            ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable
+java.lang.IllegalAccessException: class io.netty.util.internal.PlatformDependent0$6 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @4034c28c
+	at java.base/jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:361)
+	at java.base/java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:591)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:558)
+	at io.netty.util.internal.PlatformDependent0$6.run(PlatformDependent0.java:335)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at io.netty.util.internal.PlatformDependent0.<clinit>(PlatformDependent0.java:326)
+	at io.netty.util.internal.PlatformDependent.isAndroid(PlatformDependent.java:273)
+	at io.netty.util.internal.PlatformDependent.<clinit>(PlatformDependent.java:92)
+	at io.netty.channel.nio.NioEventLoop.newTaskQueue0(NioEventLoop.java:279)
+	at io.netty.channel.nio.NioEventLoop.newTaskQueue(NioEventLoop.java:150)
+	at io.netty.channel.nio.NioEventLoop.<init>(NioEventLoop.java:138)
+	at io.netty.channel.nio.NioEventLoopGroup.newChild(NioEventLoopGroup.java:146)
+	at io.netty.channel.nio.NioEventLoopGroup.newChild(NioEventLoopGroup.java:37)
+	at io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:84)
+	at io.netty.util.concurrent.MultithreadEventExecutorGroup.<init>(MultithreadEventExecutorGroup.java:58)
+	at io.netty.channel.MultithreadEventLoopGroup.<init>(MultithreadEventLoopGroup.java:52)
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:96)
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:91)
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:72)
+	at io.netty.channel.nio.NioEventLoopGroup.<init>(NioEventLoopGroup.java:52)
+	at io.github.kimmking.gateway.inbound.HttpInboundServer.run(HttpInboundServer.java:33)
+	at io.github.kimmking.gateway.NettyServerApplication.main(NettyServerApplication.java:31)
+2021-10-04 12:31:51 [DEBUG](PlatformDependent0            ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] java.nio.DirectByteBuffer.<init>(long, int): unavailable
+2021-10-04 12:31:51 [DEBUG](PlatformDependent             ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] sun.misc.Unsafe: available
+2021-10-04 12:31:51 [DEBUG](PlatformDependent             ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] maxDirectMemory: 4294967296 bytes (maybe)
+2021-10-04 12:31:51 [DEBUG](PlatformDependent             ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] -Dio.netty.tmpdir: /var/folders/z1/z2t634hn0z71kr5c2121wcx80000gn/T (java.io.tmpdir)
+2021-10-04 12:31:51 [DEBUG](PlatformDependent             ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2021-10-04 12:31:51 [DEBUG](PlatformDependent             ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] -Dio.netty.maxDirectMemory: -1 bytes
+2021-10-04 12:31:51 [DEBUG](PlatformDependent             ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2021-10-04 12:31:51 [DEBUG](CleanerJava9                  ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] java.nio.ByteBuffer.cleaner(): available
+2021-10-04 12:31:51 [DEBUG](PlatformDependent             ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] -Dio.netty.noPreferDirect: false
+2021-10-04 12:31:51 [DEBUG](PlatformDependent             ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] org.jctools-core.MpscChunkedArrayQueue: available
+2021-10-04 12:31:51 [DEBUG](ResourceLeakDetector          ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] -Dio.netty.leakDetection.level: simple
+2021-10-04 12:31:51 [DEBUG](ResourceLeakDetector          ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] -Dio.netty.leakDetection.targetRecords: 4
+2021-10-04 12:31:51 [DEBUG](PooledByteBufAllocator        ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] -Dio.netty.allocator.numHeapArenas: 16
+2021-10-04 12:31:51 [DEBUG](PooledByteBufAllocator        ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] -Dio.netty.allocator.numDirectArenas: 16
+2021-10-04 12:31:51 [DEBUG](PooledByteBufAllocator        ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] -Dio.netty.allocator.pageSize: 8192
+2021-10-04 12:31:51 [DEBUG](PooledByteBufAllocator        ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] -Dio.netty.allocator.maxOrder: 11
+2021-10-04 12:31:51 [DEBUG](PooledByteBufAllocator        ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] -Dio.netty.allocator.chunkSize: 16777216
+2021-10-04 12:31:51 [DEBUG](PooledByteBufAllocator        ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] -Dio.netty.allocator.tinyCacheSize: 512
+2021-10-04 12:31:51 [DEBUG](PooledByteBufAllocator        ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] -Dio.netty.allocator.smallCacheSize: 256
+2021-10-04 12:31:51 [DEBUG](PooledByteBufAllocator        ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] -Dio.netty.allocator.normalCacheSize: 64
+2021-10-04 12:31:51 [DEBUG](PooledByteBufAllocator        ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2021-10-04 12:31:51 [DEBUG](PooledByteBufAllocator        ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] -Dio.netty.allocator.cacheTrimInterval: 8192
+2021-10-04 12:31:51 [DEBUG](PooledByteBufAllocator        ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+2021-10-04 12:31:51 [DEBUG](PooledByteBufAllocator        ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] -Dio.netty.allocator.useCacheForAllThreads: true
+2021-10-04 12:31:51 [DEBUG](PooledByteBufAllocator        ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+2021-10-04 12:31:51 [DEBUG](DefaultChannelId              ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] -Dio.netty.processId: 3574 (auto-detected)
+2021-10-04 12:31:51 [DEBUG](NetUtil                       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] -Djava.net.preferIPv4Stack: false
+2021-10-04 12:31:51 [DEBUG](NetUtil                       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] -Djava.net.preferIPv6Addresses: false
+2021-10-04 12:31:51 [DEBUG](NetUtil                       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1%lo0)
+2021-10-04 12:31:51 [DEBUG](NetUtil                       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Failed to get SOMAXCONN from sysctl and file /proc/sys/net/core/somaxconn. Default: 128
+2021-10-04 12:31:51 [DEBUG](DefaultChannelId              ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] -Dio.netty.machineId: 3c:06:30:ff:fe:31:47:dc (auto-detected)
+2021-10-04 12:31:51 [DEBUG](ByteBufUtil                   ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] -Dio.netty.allocator.type: pooled
+2021-10-04 12:31:51 [DEBUG](ByteBufUtil                   ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] -Dio.netty.threadLocalDirectBufferSize: 0
+2021-10-04 12:31:51 [DEBUG](ByteBufUtil                   ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2021-10-04 12:31:51 [DEBUG](LoggingHandler                ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [id: 0x56b3dd1f] REGISTERED
+2021-10-04 12:31:51 [DEBUG](LoggingHandler                ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [id: 0x56b3dd1f] BIND: 0.0.0.0/0.0.0.0:8888
+2021-10-04 12:31:51 [DEBUG](LoggingHandler                ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [id: 0x56b3dd1f, L:/0:0:0:0:0:0:0:0:8888] ACTIVE
+2021-10-04 12:31:56 [DEBUG](LoggingHandler                ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [id: 0x56b3dd1f, L:/0:0:0:0:0:0:0:0:8888] READ: [id: 0x94740b8a, L:/0:0:0:0:0:0:0:1:8888 - R:/0:0:0:0:0:0:0:1:52135]
+2021-10-04 12:31:56 [WARN ](ServerBootstrap               ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Unknown channel option 'io.netty.channel.unix.UnixChannelOption#SO_REUSEPORT' for channel '[id: 0x94740b8a, L:/0:0:0:0:0:0:0:1:8888 - R:/0:0:0:0:0:0:0:1:52135]'
+2021-10-04 12:31:56 [DEBUG](LoggingHandler                ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [id: 0x56b3dd1f, L:/0:0:0:0:0:0:0:0:8888] READ COMPLETE
+2021-10-04 12:31:56 [DEBUG](AbstractByteBuf               ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] -Dio.netty.buffer.checkAccessible: true
+2021-10-04 12:31:56 [DEBUG](AbstractByteBuf               ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] -Dio.netty.buffer.checkBounds: true
+2021-10-04 12:31:56 [DEBUG](ResourceLeakDetectorFactory   ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@765bd164
+2021-10-04 12:31:57 [DEBUG](Recycler                      ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] -Dio.netty.recycler.maxCapacityPerThread: 4096
+2021-10-04 12:31:57 [DEBUG](Recycler                      ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] -Dio.netty.recycler.maxSharedCapacityFactor: 2
+2021-10-04 12:31:57 [DEBUG](Recycler                      ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] -Dio.netty.recycler.linkCapacity: 16
+2021-10-04 12:31:57 [DEBUG](Recycler                      ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] -Dio.netty.recycler.ratio: 8
+2021-10-04 12:31:57 [INFO ](HttpOutboundHandler           ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http://localhost:8802/
+2021-10-04 12:31:57 [DEBUG](MainClientExec                ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [exchange: 1] start execution
+2021-10-04 12:31:57 [DEBUG](RequestAddCookies             ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] CookieSpec selected: default
+2021-10-04 12:31:57 [DEBUG](RequestAuthCache              ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Auth cache not set in the context
+2021-10-04 12:31:57 [DEBUG](InternalHttpAsyncClient       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [exchange: 1] Request connection for {}->http://localhost:8802
+2021-10-04 12:31:57 [DEBUG](PoolingNHttpClientConnectionManager) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Connection request: [route: {}->http://localhost:8802][total kept alive: 0; route allocated: 0 of 8; total allocated: 0 of 40]
+2021-10-04 12:31:57 [DEBUG](PoolingNHttpClientConnectionManager) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Connection leased: [id: http-outgoing-0][route: {}->http://localhost:8802][total kept alive: 0; route allocated: 1 of 8; total allocated: 0 of 40]
+2021-10-04 12:31:57 [DEBUG](InternalHttpAsyncClient       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [exchange: 1] Connection allocated: CPoolProxy{http-outgoing-0 [ACTIVE]}
+2021-10-04 12:31:57 [DEBUG](ManagedNHttpClientConnectionImpl) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-0 127.0.0.1:52136<->127.0.0.1:8802[ACTIVE][r:]: Set attribute http.nio.exchange-handler
+2021-10-04 12:31:57 [DEBUG](ManagedNHttpClientConnectionImpl) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-0 127.0.0.1:52136<->127.0.0.1:8802[ACTIVE][rw:]: Event set [w]
+2021-10-04 12:31:57 [DEBUG](ManagedNHttpClientConnectionImpl) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-0 127.0.0.1:52136<->127.0.0.1:8802[ACTIVE][rw:]: Set timeout 1000
+2021-10-04 12:31:57 [DEBUG](InternalIODispatch            ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-0 [ACTIVE]: Connected
+2021-10-04 12:31:57 [DEBUG](ManagedNHttpClientConnectionImpl) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-0 127.0.0.1:52136<->127.0.0.1:8802[ACTIVE][rw:]: Set attribute http.nio.http-exchange-state
+2021-10-04 12:31:57 [DEBUG](InternalHttpAsyncClient       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [exchange: 1] Start connection routing
+2021-10-04 12:31:57 [DEBUG](InternalHttpAsyncClient       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [exchange: 1] route completed
+2021-10-04 12:31:57 [DEBUG](MainClientExec                ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [exchange: 1] Connection route established
+2021-10-04 12:31:57 [DEBUG](MainClientExec                ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [exchange: 1] Attempt 1 to execute request
+2021-10-04 12:31:57 [DEBUG](MainClientExec                ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [exchange: 1] Target auth state: UNCHALLENGED
+2021-10-04 12:31:57 [DEBUG](MainClientExec                ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [exchange: 1] Proxy auth state: UNCHALLENGED
+2021-10-04 12:31:57 [DEBUG](headers                       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-0 >> GET / HTTP/1.1
+2021-10-04 12:31:57 [DEBUG](headers                       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-0 >> Connection: Keep-Alive
+2021-10-04 12:31:57 [DEBUG](headers                       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-0 >> mao: soul
+2021-10-04 12:31:57 [DEBUG](headers                       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-0 >> Host: localhost:8802
+2021-10-04 12:31:57 [DEBUG](headers                       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-0 >> User-Agent: Apache-HttpAsyncClient/4.1.4 (Java/11.0.12)
+2021-10-04 12:31:57 [DEBUG](ManagedNHttpClientConnectionImpl) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-0 127.0.0.1:52136<->127.0.0.1:8802[ACTIVE][rw:]: Event set [w]
+2021-10-04 12:31:57 [DEBUG](MainClientExec                ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [exchange: 1] Request completed
+2021-10-04 12:31:57 [DEBUG](ManagedNHttpClientConnectionImpl) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-0 127.0.0.1:52136<->127.0.0.1:8802[ACTIVE][rw:rw]: 83 bytes read
+2021-10-04 12:31:57 [DEBUG](wire                          ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-0 << "HTTP/1.1 200 OK[\n]"
+2021-10-04 12:31:57 [DEBUG](wire                          ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-0 << "Content-Type:text/html;charset=utf-8[\n]"
+2021-10-04 12:31:57 [DEBUG](wire                          ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-0 << "Content-Length:11[\n]"
+2021-10-04 12:31:57 [DEBUG](wire                          ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-0 << "[\n]"
+2021-10-04 12:31:57 [DEBUG](wire                          ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-0 << "hello, nio2"
+2021-10-04 12:31:57 [DEBUG](headers                       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-0 << HTTP/1.1 200 OK
+2021-10-04 12:31:57 [DEBUG](headers                       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-0 << Content-Type:text/html;charset=utf-8
+2021-10-04 12:31:57 [DEBUG](headers                       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-0 << Content-Length:11
+2021-10-04 12:31:57 [DEBUG](InternalIODispatch            ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-0 [ACTIVE(11)] Response received
+2021-10-04 12:31:57 [DEBUG](MainClientExec                ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [exchange: 1] Response received HTTP/1.1 200 OK
+2021-10-04 12:31:57 [DEBUG](InternalIODispatch            ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-0 [ACTIVE(11)] Input ready
+2021-10-04 12:31:57 [DEBUG](MainClientExec                ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [exchange: 1] Consume content
+2021-10-04 12:31:57 [DEBUG](InternalHttpAsyncClient       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [exchange: 1] Connection can be kept alive for 6000 MILLISECONDS
+2021-10-04 12:31:57 [DEBUG](MainClientExec                ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [exchange: 1] Response processed
+2021-10-04 12:31:57 [DEBUG](InternalHttpAsyncClient       ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [exchange: 1] releasing connection
+2021-10-04 12:31:57 [DEBUG](ManagedNHttpClientConnectionImpl) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-0 127.0.0.1:52136<->127.0.0.1:8802[ACTIVE][rw:rw]: Remove attribute http.nio.exchange-handler
+2021-10-04 12:31:57 [DEBUG](PoolingNHttpClientConnectionManager) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Releasing connection: [id: http-outgoing-0][route: {}->http://localhost:8802][total kept alive: 0; route allocated: 1 of 8; total allocated: 1 of 40]
+2021-10-04 12:31:57 [DEBUG](PoolingNHttpClientConnectionManager) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Connection [id: http-outgoing-0][route: {}->http://localhost:8802] can be kept alive for 6.0 seconds
+2021-10-04 12:31:57 [DEBUG](ManagedNHttpClientConnectionImpl) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-0 127.0.0.1:52136<->127.0.0.1:8802[ACTIVE][rw:rw]: Set timeout 0
+2021-10-04 12:31:57 [DEBUG](PoolingNHttpClientConnectionManager) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Connection released: [id: http-outgoing-0][route: {}->http://localhost:8802][total kept alive: 1; route allocated: 1 of 8; total allocated: 1 of 40]
+2021-10-04 12:31:57 [INFO ](HttpOutboundHandler           ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] DefaultFullHttpResponse(decodeResult: success, version: HTTP/1.1, content: UnpooledHeapByteBuf(ridx: 0, widx: 11, cap: 11/11))
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 11
+kk: java-1-nio
+2021-10-04 12:31:57 [DEBUG](InternalIODispatch            ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-0 [ACTIVE] [content length: 11; pos: 11; completed: true]
+2021-10-04 12:31:57 [DEBUG](ManagedNHttpClientConnectionImpl) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-0 127.0.0.1:52136<->127.0.0.1:8802[ACTIVE][rw:rw]: 132 bytes written
+2021-10-04 12:31:57 [DEBUG](wire                          ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-0 >> "GET / HTTP/1.1[\r][\n]"
+2021-10-04 12:31:57 [DEBUG](wire                          ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2021-10-04 12:31:57 [DEBUG](wire                          ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-0 >> "mao: soul[\r][\n]"
+2021-10-04 12:31:57 [DEBUG](wire                          ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-0 >> "Host: localhost:8802[\r][\n]"
+2021-10-04 12:31:57 [DEBUG](wire                          ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-0 >> "User-Agent: Apache-HttpAsyncClient/4.1.4 (Java/11.0.12)[\r][\n]"
+2021-10-04 12:31:57 [DEBUG](wire                          ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-0 >> "[\r][\n]"
+2021-10-04 12:31:57 [DEBUG](InternalIODispatch            ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-0 [ACTIVE] Exception
+java.io.IOException: Connection reset by peer
+	at java.base/sun.nio.ch.FileDispatcherImpl.read0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:39)
+	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:276)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:245)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:223)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:358)
+	at org.apache.http.impl.nio.conn.LoggingIOSession$LoggingByteChannel.read(LoggingIOSession.java:204)
+	at org.apache.http.impl.nio.reactor.SessionInputBufferImpl.fill(SessionInputBufferImpl.java:204)
+	at org.apache.http.impl.nio.codecs.AbstractMessageParser.fillBuffer(AbstractMessageParser.java:136)
+	at org.apache.http.impl.nio.DefaultNHttpClientConnection.consumeInput(DefaultNHttpClientConnection.java:241)
+	at org.apache.http.impl.nio.client.InternalIODispatch.onInputReady(InternalIODispatch.java:81)
+	at org.apache.http.impl.nio.client.InternalIODispatch.onInputReady(InternalIODispatch.java:39)
+	at org.apache.http.impl.nio.reactor.AbstractIODispatch.inputReady(AbstractIODispatch.java:114)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.readable(BaseIOReactor.java:162)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.processEvent(AbstractIOReactor.java:337)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.processEvents(AbstractIOReactor.java:315)
+	at org.apache.http.impl.nio.reactor.AbstractIOReactor.execute(AbstractIOReactor.java:276)
+	at org.apache.http.impl.nio.reactor.BaseIOReactor.execute(BaseIOReactor.java:104)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:588)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-10-04 12:31:57 [DEBUG](ManagedNHttpClientConnectionImpl) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-0 127.0.0.1:52136<->127.0.0.1:8802[ACTIVE][rw:rw]: Shutdown
+2021-10-04 12:31:57 [DEBUG](InternalIODispatch            ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http-outgoing-0 [CLOSED]: Disconnected

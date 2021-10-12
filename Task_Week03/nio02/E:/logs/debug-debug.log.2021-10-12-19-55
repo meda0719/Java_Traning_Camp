@@ -1,0 +1,61 @@
+2021-10-12 19:55:36 [DEBUG](LoggingHandler                ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [id: 0xdc2533b8, L:/0:0:0:0:0:0:0:0:8888] READ: [id: 0xae45cd65, L:/127.0.0.1:8888 - R:/127.0.0.1:49686]
+2021-10-12 19:55:36 [WARN ](ServerBootstrap               ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Unknown channel option 'io.netty.channel.unix.UnixChannelOption#SO_REUSEPORT' for channel '[id: 0xae45cd65, L:/127.0.0.1:8888 - R:/127.0.0.1:49686]'
+2021-10-12 19:55:36 [DEBUG](LoggingHandler                ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [id: 0xdc2533b8, L:/0:0:0:0:0:0:0:0:8888] READ COMPLETE
+2021-10-12 19:55:36 [INFO ](NettyClientPoolHandler        ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] channelCreated. Channel_ID is 7577485f
+2021-10-12 19:55:36 [INFO ](NettyClientPoolHandler        ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] channelCreated. Channel_ID is 7577485f
+2021-10-12 19:55:36 [INFO ](NettyClient                   ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] 服务器端请求：io.github.kimmking.gateway.outbound.nettyclient.NettyClientHttpRequest@330a35a6
+2021-10-12 19:55:36 [INFO ](NettyClientHandler            ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Netty Client read data: hello, nio2
+2021-10-12 19:55:36 [INFO ](NettyClientHandler            ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] HttpObjectAggregator$AggregatedFullHttpResponse(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 11, cap: 11, components=1))
+HTTP/1.1 200 OK
+Content-Type: text/html;charset=utf-8
+Content-Length: 11
+kk: java-1-nio
+2021-10-12 19:55:36 [INFO ](NettyClientHandler            ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] HttpObjectAggregator$AggregatedFullHttpResponse(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 11, cap: 11, components=1))
+HTTP/1.1 200 OK
+Content-Type: text/html;charset=utf-8
+Content-Length: 11
+kk: java-1-nio
+2021-10-12 19:55:36 [INFO ](NettyClientHandler            ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] ChannelHandlerContext(HttpInboundHandler#0, [id: 0xae45cd65, L:/127.0.0.1:8888 - R:/127.0.0.1:49686])
+2021-10-12 19:55:36 [INFO ](NettyClientHandler            ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [id: 0x7577485f, L:/127.0.0.1:49687 - R:localhost/127.0.0.1:8802]
+2021-10-12 19:55:36 [WARN ](ChannelOutboundBuffer         ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Failed to mark a promise as success because it has failed already: DefaultChannelPromise@7608bda3(failure: io.netty.handler.codec.EncoderException: io.netty.util.IllegalReferenceCountException: refCnt: 0, decrement: 1), unnotified cause:
+io.netty.handler.codec.EncoderException: io.netty.util.IllegalReferenceCountException: refCnt: 0, decrement: 1
+	at io.netty.handler.codec.MessageToMessageEncoder.write(MessageToMessageEncoder.java:107)
+	at io.netty.channel.CombinedChannelDuplexHandler.write(CombinedChannelDuplexHandler.java:346)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWrite0(AbstractChannelHandlerContext.java:715)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeWriteAndFlush(AbstractChannelHandlerContext.java:762)
+	at io.netty.channel.AbstractChannelHandlerContext$WriteTask.run(AbstractChannelHandlerContext.java:1089)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:500)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: io.netty.util.IllegalReferenceCountException: refCnt: 0, decrement: 1
+	at io.netty.util.internal.ReferenceCountUpdater.toLiveRealRefCnt(ReferenceCountUpdater.java:74)
+	at io.netty.util.internal.ReferenceCountUpdater.release(ReferenceCountUpdater.java:138)
+	at io.netty.buffer.AbstractReferenceCountedByteBuf.release(AbstractReferenceCountedByteBuf.java:100)
+	at io.netty.handler.codec.http.HttpObjectAggregator$AggregatedFullHttpMessage.release(HttpObjectAggregator.java:379)
+	at io.netty.util.ReferenceCountUtil.release(ReferenceCountUtil.java:88)
+	at io.netty.handler.codec.MessageToMessageEncoder.write(MessageToMessageEncoder.java:91)
+	... 11 more
+2021-10-12 19:55:36 [WARN ](DefaultChannelPipeline        ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: Connection reset by peer
+	at java.base/sun.nio.ch.FileDispatcherImpl.read0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:39)
+	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:276)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:233)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:223)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:358)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1133)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:834)

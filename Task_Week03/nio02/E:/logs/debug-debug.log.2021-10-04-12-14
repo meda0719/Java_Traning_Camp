@@ -1,0 +1,5 @@
+2021-10-04 12:14:21 [DEBUG](LoggingHandler                ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [id: 0x65ee8d92, L:/0:0:0:0:0:0:0:0:8888] READ: [id: 0x3b3f1a40, L:/0:0:0:0:0:0:0:1:8888 - R:/0:0:0:0:0:0:0:1:52027]
+2021-10-04 12:14:21 [WARN ](ServerBootstrap               ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Unknown channel option 'io.netty.channel.unix.UnixChannelOption#SO_REUSEPORT' for channel '[id: 0x3b3f1a40, L:/0:0:0:0:0:0:0:1:8888 - R:/0:0:0:0:0:0:0:1:52027]'
+2021-10-04 12:14:21 [DEBUG](LoggingHandler                ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [id: 0x65ee8d92, L:/0:0:0:0:0:0:0:0:8888] READ COMPLETE
+2021-10-04 12:14:21 [INFO ](HttpOutboundHandler           ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http://localhost:8801/s?name=Meda 
+2021-10-04 12:14:21 [INFO ](HttpOutboundHandler           ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] http://localhost:8802

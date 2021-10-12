@@ -1,0 +1,53 @@
+2021-10-12 20:03:03 [DEBUG](LoggingHandler                ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [id: 0x6d149578, L:/0:0:0:0:0:0:0:0:8888] READ: [id: 0x7eafcb0e, L:/127.0.0.1:8888 - R:/127.0.0.1:49726]
+2021-10-12 20:03:03 [WARN ](ServerBootstrap               ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Unknown channel option 'io.netty.channel.unix.UnixChannelOption#SO_REUSEPORT' for channel '[id: 0x7eafcb0e, L:/127.0.0.1:8888 - R:/127.0.0.1:49726]'
+2021-10-12 20:03:03 [DEBUG](LoggingHandler                ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [id: 0x6d149578, L:/0:0:0:0:0:0:0:0:8888] READ COMPLETE
+2021-10-12 20:03:03 [DEBUG](AbstractByteBuf               ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] -Dio.netty.buffer.checkAccessible: true
+2021-10-12 20:03:03 [DEBUG](AbstractByteBuf               ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] -Dio.netty.buffer.checkBounds: true
+2021-10-12 20:03:03 [DEBUG](ResourceLeakDetectorFactory   ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@235807ea
+2021-10-12 20:03:03 [DEBUG](Recycler                      ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] -Dio.netty.recycler.maxCapacityPerThread: 4096
+2021-10-12 20:03:03 [DEBUG](Recycler                      ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] -Dio.netty.recycler.maxSharedCapacityFactor: 2
+2021-10-12 20:03:03 [DEBUG](Recycler                      ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] -Dio.netty.recycler.linkCapacity: 16
+2021-10-12 20:03:03 [DEBUG](Recycler                      ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] -Dio.netty.recycler.ratio: 8
+2021-10-12 20:03:03 [INFO ](NettyClientPoolHandler        ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] channelCreated. Channel_ID is 5f4969d7
+2021-10-12 20:03:03 [INFO ](NettyClientPoolHandler        ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] channelCreated. Channel_ID is 5f4969d7
+2021-10-12 20:03:03 [INFO ](NettyClient                   ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] 服务器端请求：io.github.kimmking.gateway.outbound.nettyclient.NettyClientHttpRequest@6e0b573a
+2021-10-12 20:03:03 [INFO ](NettyClientHandler            ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Netty Client read data: hello others
+2021-10-12 20:03:03 [INFO ](NettyClientHandler            ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] HttpObjectAggregator$AggregatedFullHttpResponse(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 12, cap: 12, components=1))
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 12
+CONNECTION: KEEP_ALIVE
+kk: java-1-nio
+2021-10-12 20:03:03 [INFO ](NettyClientHandler            ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] HttpObjectAggregator$AggregatedFullHttpResponse(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 12, cap: 12, components=1))
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 12
+CONNECTION: KEEP_ALIVE
+kk: java-1-nio
+2021-10-12 20:03:03 [INFO ](NettyClientHandler            ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] ChannelHandlerContext(HttpInboundHandler#0, [id: 0x7eafcb0e, L:/127.0.0.1:8888 - R:/127.0.0.1:49726])
+2021-10-12 20:03:03 [INFO ](NettyClientHandler            ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [id: 0x5f4969d7, L:/127.0.0.1:49727 - R:localhost/127.0.0.1:8808]
+2021-10-12 20:03:08 [DEBUG](LoggingHandler                ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [id: 0x6d149578, L:/0:0:0:0:0:0:0:0:8888] READ: [id: 0x786c1ad3, L:/127.0.0.1:8888 - R:/127.0.0.1:49729]
+2021-10-12 20:03:08 [WARN ](ServerBootstrap               ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Unknown channel option 'io.netty.channel.unix.UnixChannelOption#SO_REUSEPORT' for channel '[id: 0x786c1ad3, L:/127.0.0.1:8888 - R:/127.0.0.1:49729]'
+2021-10-12 20:03:08 [DEBUG](LoggingHandler                ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [id: 0x6d149578, L:/0:0:0:0:0:0:0:0:8888] READ COMPLETE
+2021-10-12 20:03:08 [INFO ](NettyClientPoolHandler        ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] channelCreated. Channel_ID is 7810a5e2
+2021-10-12 20:03:08 [INFO ](NettyClientPoolHandler        ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] channelCreated. Channel_ID is 7810a5e2
+2021-10-12 20:03:08 [INFO ](NettyClient                   ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] 服务器端请求：io.github.kimmking.gateway.outbound.nettyclient.NettyClientHttpRequest@1f307cac
+2021-10-12 20:03:08 [INFO ](NettyClientHandler            ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] Netty Client read data: hello others
+2021-10-12 20:03:08 [INFO ](NettyClientHandler            ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] HttpObjectAggregator$AggregatedFullHttpResponse(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 12, cap: 12, components=1))
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 12
+CONNECTION: KEEP_ALIVE
+kk: java-1-nio
+2021-10-12 20:03:08 [INFO ](NettyClientHandler            ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] HttpObjectAggregator$AggregatedFullHttpResponse(decodeResult: success, version: HTTP/1.1, content: CompositeByteBuf(ridx: 0, widx: 12, cap: 12, components=1))
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 12
+CONNECTION: KEEP_ALIVE
+kk: java-1-nio
+2021-10-12 20:03:08 [INFO ](NettyClientHandler            ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] ChannelHandlerContext(HttpInboundHandler#0, [id: 0x786c1ad3, L:/127.0.0.1:8888 - R:/127.0.0.1:49729])
+2021-10-12 20:03:08 [INFO ](NettyClientHandler            ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] [id: 0x7810a5e2, L:/127.0.0.1:49730 - R:localhost/127.0.0.1:8808]
+2021-10-12 20:03:33 [WARN ](DefaultChannelPipeline        ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+io.netty.handler.timeout.ReadTimeoutException
+2021-10-12 20:03:38 [WARN ](DefaultChannelPipeline        ) [TxId :  , SpanId : ] [ET:,AN:,SN:,CN:,CI:] An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+io.netty.handler.timeout.ReadTimeoutException
