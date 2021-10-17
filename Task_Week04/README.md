@@ -1,12 +1,14 @@
 
-1.（必做）整合你上次作业的 httpclient/okhttp；  
---请见项目nio02，io.github.kimmking.gateway.outbound.httpclient4  
-2.（选做）使用 netty 实现后端 http 访问（代替上一步骤)  
---请见项目nio02，io.github.kimmking.gateway.outbound.nettyclient   
-3.（必做）实现过滤器。
---请见项目nio02，io.github.kimmking.gateway.router  
-4.（选做）实现路由。
---请见项目nio02，io.github.kimmking.gateway.filter  
-5.（选做）跑一跑课上的各个例子，加深对多线程的理解
-6.（选做）完善网关的例子，试着调整其中的线程池参数
+2.（必做）思考有多少种方式，在 main 函数启动一个新线程，运行一个方法，拿到这个方法的返回值后，退出主线程? 写出你的方法，越多越好，提交到 GitHub。
+--请见项目0301，package java0.conc0303.homework，想到8种方法，以下类  
+  1）Homework01, 使用FutureTask  
+  2）Homework02，使用ComepleteFuture  
+  3）Homework03，使用线程池  
+  4）Homework04，使用主线程循环等待  
+  5）Homework05，使用join方法阻塞当前线程，等待子线程完成  
+  6）Homework06，使用stream并行计算  
+  7）Homework07，使用CountDownLatch+ConcurrentHashMap  
+  8）其他还可以通过数据库，或者消息队列来实现  
+6.（必做）把多线程和并发相关知识梳理一遍，画一个脑图，截图上传到 GitHub 上。 可选工具:xmind，百度脑图，wps，MindManage，或其他。  
+
 
