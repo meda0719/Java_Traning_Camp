@@ -49,7 +49,7 @@ public class NettyClientHandler extends SimpleChannelInboundHandler<FullHttpResp
         log.info(response.toString());
         log.info(serverChannel.toString());
         log.info(clientChannel.toString());
-        serverChannel.writeAndFlush(response);
+        serverChannel.writeAndFlush(response).sync();
     }
 
 //        FullHttpResponse response = NettyHttpResponseUtil.buildSuccessResponse(msg);
